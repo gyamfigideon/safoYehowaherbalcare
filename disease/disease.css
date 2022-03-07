@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.active{
+    color: #fc036b;
+    text-decoration: underline;
+    font-weight: bold;
+}
+body , html{
+    overflow-x: hidden;
+}
+/* Navbar */
+.navbar {
+   position: absolute;
+   top: 0;
+   left: 0;
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+   padding: 20px;
+   color: #49497e;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+.nav-links li {
+    margin: 0 30px;
+}
+.menu-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Intro */
+section{
+    width: 80%;
+    margin: 80px auto;
+}
+.title {
+    text-align: center;
+    font-size: 4vmin;
+    color: #49497e;
+}
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.row .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.row .col img{
+    width: 80%;
+}
+.intro .row {
+    margin-top: 50px;
+}
+h4 {
+    font-size: 3vmin;
+    color: #484872;
+    margin: 20px auto;
+}
+p {
+    color: #7c7c7c;
+    padding: 0px 40px;
+}
+
+.footer {
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background: #484872;
+    text-align: center;
+}
+.footer p {
+    color: whitesmoke;
+    margin: 20px auto; 
+}
+/* Mobile device */
+@media only screen and (max-width:850px){
+    .menu-btn{
+        display: block;
+    }
+    .navbar{
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: whitesmoke;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu{
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+    }
+    .nav-links li {
+        margin: 30px auto;
+    }
+}   
+/* Animations */
+img {
+    transition: transform .3s ease;
+}
+img:hover {
+    transform: scale(1.1)
+}
+.ctn:hover {
+     background: whitesmoke;
+     color: #fc036b;
+     box-shadow: 2px 2px 5px #00000056;
+}
+li:hover {
+    color: #fc036b;
+    cursor: zoom-out;
+}
